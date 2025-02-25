@@ -1,6 +1,6 @@
 import "./globals.css";
 import { ReactNode } from "react";
-import Head from "next/head"; // Import Head from Next.js
+import Head from "next/head";
 
 export const metadata = {
   title: "Portfolio",
@@ -13,14 +13,14 @@ interface RootLayoutProps {
 
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
-    <>
+    <html lang="en">
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{metadata.title}</title>
       </Head>
       <body>{children}</body>
-    </>
+    </html>
   );
 };
 
