@@ -1,5 +1,6 @@
 // app/layout.tsx
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import type { Metadata } from "next";
 import ClientRoot from "./ClientRoot";
 import { html } from "framer-motion/client";
