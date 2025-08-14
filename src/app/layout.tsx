@@ -1,9 +1,7 @@
-// app/layout.tsx
 import "./globals.css";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import ClientRoot from "./ClientRoot";
-import { html } from "framer-motion/client";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -17,16 +15,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html>
+    <html lang="en">
       <body>
-            <div className="relative z-11">
-              <ClientRoot>{children}</ClientRoot>
-            </div>
+        <div className="relative z-[11]">
+          <ClientRoot>{children}</ClientRoot>
+        </div>
 
-
+        <SpeedInsights />
       </body>
-
     </html>
-
   );
 }
