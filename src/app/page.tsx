@@ -18,7 +18,7 @@ export default function Home() {
       </div>
       <div className="h-[500px] text-white text-center flex flex-row max-[500px]:flex-col-reverse items-center justify-center gap-[170px] max-[1300px]:gap-[100px] max-[1100px]:gap-[50px] relative z-10 max-[500px]:pt-[500px] max-[500px]:pb-[500px] pt-[350px] pb-[350px]">
         <div className="w-[calc(525px+2vw)] max-[1100px]:w-[calc(300px+2vw)] flex flex-col flex-wrap text-white text-center justify-center ">
-          <h1 className="text-[calc(0.9rem+2vw)] text-start font-bold">Hi,I'm Song</h1>
+          <h1 className="text-[calc(0.9rem+2vw)] text-start font-bold">I&apos;m Song — It&apos;s my site.</h1>
           <div className="text-[calc(1.1rem+2vw)] text-start font-bold">Full-Stack-Development</div>
           <div className="text=[calc(0.5rem+2vw)] text-start mt-[25px]  ">I build fast, modern, and scalable websites using React, Next.js, and JavaScript—focused on clean UI, great UX, and real business impact.</div>
           <div className="flex gap-[20px] mt-[50px] max-[500px]:justify-center">
@@ -49,7 +49,7 @@ export default function Home() {
                bg-gradient-to-r from-[#FF0000] [#FF3F33] to-white 
                bg-clip-text text-transparent">My Recent Works</h1>
         <Navwork />
-        <iframe src="" ></iframe>
+        
       </div>
     </div>
   );
