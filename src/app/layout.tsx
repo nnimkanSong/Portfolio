@@ -2,6 +2,7 @@ import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import ClientRoot from "./ClientRoot";
+import AOSInit from "@/app/components/AOSInit";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -15,9 +16,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>
-        <div className="relative z-[11]">
+    <html lang="en" suppressHydrationWarning>
+    <AOSInit />
+      <head>
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          rel="stylesheet"
+        />
+      </head>
+
+      <body suppressHydrationWarning>
+        <div>
           <ClientRoot>{children}</ClientRoot>
         </div>
 

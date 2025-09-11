@@ -45,16 +45,19 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
   return (
     <>
+    
       {/* <Background> */}
         <Nav />
+        
         {children}
         <Footer />
+        
       {/* </Background> */}
 
       {loading && (
         <div
           ref={overlayRef}
-          className="fixed inset-0 z-[9999] bg-black text-white flex items-center justify-center"
+          className="fixed inset-0  bg-black text-white flex items-center justify-center"
         >
           <h1
             className="text-2xl md:text-3xl font-bold flex"
