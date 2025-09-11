@@ -90,6 +90,7 @@ export default function Nav() {
           <li><a href="#about" onClick={(e) => go(e, "#about")} className="block py-2 hover:opacity-70">About</a></li>
           <li><a href="#resume" onClick={(e) => go(e, "#resume")} className="block py-2 hover:opacity-70">Resume</a></li>
           <li><a href="#portfolios" onClick={(e) => go(e, "#portfolios")} className="block py-2 hover:opacity-70">Portfolios</a></li>
+          <li><a href="#contact" onClick={(e) => go(e, "#contact")} className="block py-2 hover:opacity-70">Contact</a></li>
           <li>
             {/* <button className="w-max px-4 py-2 rounded-xl bg-black text-white hover:opacity-80 transition">
               Hire Me
