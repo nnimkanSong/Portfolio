@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const Footer: React.FC = () => {
     return (
         <footer
@@ -61,9 +61,14 @@ const Footer: React.FC = () => {
                     {/* Logo & About */}
                     <div data-aos="fade-up" data-aos-delay="0">
                         <div className="mb-6">
-                            <a href="#home">
-                                <img src="../img/logo.png" alt="logo" className="w-max" />
-                            </a>
+                            <Image
+                                src="/img/logo.png"   
+                                alt="logo"
+                                width={120}           
+                                height={40}
+                                className="w-max"
+                                priority              
+                            />
                         </div>
                         <p className="text-gray-400 text-sm leading-6 mb-4">
                             ติดตามอัปเดตผลงานและบทความใหม่ ๆ ได้ที่โซเชียลมีเดีย
@@ -120,7 +125,7 @@ const Footer: React.FC = () => {
                                     Contact
                                 </a>
                             </li>
-                            
+
                         </ul>
                     </div>
 

@@ -5,7 +5,7 @@ import {
   SiReact, SiNextdotjs, SiHtml5, SiCss3, SiTailwindcss, SiBootstrap,
   SiNodedotjs, SiExpress, SiFastapi, SiDjango, SiGraphql,
   SiMongodb, SiMysql, SiPostgresql, SiFirebase,
-  SiGit, SiDocker, SiKubernetes, SiDotnet,
+  SiGit, SiDocker
 } from "react-icons/si"
 
 const techCategories = [
