@@ -52,7 +52,6 @@ export default function Nav() {
         </a>
 
         <ul className="hidden md:flex items-center gap-6">
-          <li><a href="#home" onClick={(e) => go(e, "#home")} className="hover:opacity-80">Home</a></li>
           <li><a href="#about" onClick={(e) => go(e, "#about")} className="hover:opacity-80">About</a></li>
           <li><a href="#resume" onClick={(e) => go(e, "#resume")} className="hover:opacity-80">Resume</a></li>
           <li><a href="#portfolios" onClick={(e) => go(e, "#portfolios")} className="hover:opacity-80">Portfolios</a></li>
@@ -88,7 +87,6 @@ export default function Nav() {
         ${open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
       >
         <ul className="px-4 pb-4 space-y-3 text-black">
-          <li><a href="#home" onClick={(e) => go(e, "#home")} className="block py-2 hover:opacity-70">Home</a></li>
           <li><a href="#about" onClick={(e) => go(e, "#about")} className="block py-2 hover:opacity-70">About</a></li>
           <li><a href="#resume" onClick={(e) => go(e, "#resume")} className="block py-2 hover:opacity-70">Resume</a></li>
           <li><a href="#portfolios" onClick={(e) => go(e, "#portfolios")} className="block py-2 hover:opacity-70">Portfolios</a></li>
