@@ -53,7 +53,7 @@ export function ProjectsSection() {
             {projects.map((project, i) => (
               <article
                 key={project.title}
-                className="group relative flex flex-col overflow-hidden rounded-xl border bg-white  text-black shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-zinc-800 dark: dark:text-white"
+                className="group relative flex flex-col overflow-hidden rounded-xl border bg-white  text-black shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-800 dark:text-white"
                 data-aos="zoom-in-up"
                 data-aos-delay={100 + i * 100}   // ไล่ delay ต่อการ์ด
                 data-aos-duration="700"
