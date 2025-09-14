@@ -29,6 +29,15 @@ export function ProjectsSection() {
       technologies: ["Html", "CSS"],
       liveUrl: "https://project-intra-portfolio.netlify.app/skip",
       githubUrl: "https://github.com/42Bangkok-DPs/DP-Web",
+    },
+    {
+      title: "Project ToDo List",
+      description:
+        "Developed a portfolio website using NextJS, Tailwind CSS, and TypeScript, deployed on Vercel. ",
+      image: "../img/todo.png",
+      technologies: ["NextJS", "Tailwind CSS", "TypeScript", "Prisma", "MongoDB"],
+      liveUrl: "https://nathakon-todo.site/register",
+      githubUrl: "https://github.com/nnimkanSong/To-Do-list.git",
     }
   ];
 
