@@ -9,20 +9,19 @@ import { ProjectsSection } from "./components/project";
 import { TechToolsSection } from "./components/tech&tool";
 
 export default function Home() {
-  // ดีเลย์ขั้นต่ำรอ asset/ภาพ/ฟอนต์ ~2.5s
   const BASE_DELAY = 2500;
 
   useEffect(() => {
     AOS.init({
-      duration: 800,                // ความเร็วแอนิเมชัน (ms)
+      duration: 800,
       easing: "ease-out-cubic",
-      offset: 100,                  // ระยะก่อนเริ่มเล่น
-      once: true,                   // เล่นครั้งเดียว
-      // ปิดแอนิเมชันสำหรับผู้ใช้ที่ตั้งค่า reduce motion
-      disable: () =>
-        typeof window !== "undefined" &&
-        window.matchMedia &&
-        window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+      offset: 100,
+      once: true,
+      disable: false,
+      // disable: () =>
+      //   typeof window !== "undefined" &&
+      //   window.matchMedia &&
+      //   window.matchMedia("(prefers-reduced-motion: reduce)").matches,
     });
 
     // รีเฟรชหลังหน้าโหลดเสร็จ + กันกรณี asset มาไม่พร้อม
@@ -113,7 +112,7 @@ export default function Home() {
             alt="Profile"
             width={300}
             height={300}
-            className="rounded-[20px] max-[500px]:w-[220px]"
+            className="rounded-[20px] max-[500px]:w-[220px] "
           />
           {/* overlay (ไว้ค่อยผูก hover ก็ได้) */}
           <div className="absolute bg-black/70 text-white flex flex-col items-center justify-center opacity-0 transition-opacity duration-500 group-hover:opacity-100 rounded-lg">
@@ -136,7 +135,7 @@ export default function Home() {
       <div
         className="bg-gradient-to-r from-[#E8EAED] to-[#E8EAED] relative text-white text-center"
         data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"> 
+        data-aos-anchor-placement="top-bottom">
         <ProjectsSection />
       </div>
     </>
