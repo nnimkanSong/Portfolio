@@ -8,6 +8,7 @@ type Project = {
   technologies: string[];
   liveUrl: string;
   githubUrl: string;
+  isLive: boolean;
 };
 
 export function ProjectsSection() {
@@ -20,6 +21,7 @@ export function ProjectsSection() {
       technologies: ["Vite + React", "Node.js", "PostgreSQL", "Tailwind CSS"],
       liveUrl: "https://example.com",
       githubUrl: "https://github.com/nnimkanSong/AC-info/tree/main/cewebsite",
+      isLive: false,
     },
     {
       title: "Rush Project intra 42 Bangkok",
@@ -29,6 +31,7 @@ export function ProjectsSection() {
       technologies: ["Html", "CSS"],
       liveUrl: "https://project-intra-portfolio.netlify.app/skip",
       githubUrl: "https://github.com/42Bangkok-DPs/DP-Web",
+      isLive: true,
     },
     {
       title: "Project ToDo List",
@@ -38,6 +41,7 @@ export function ProjectsSection() {
       technologies: ["NextJS", "Tailwind CSS", "TypeScript", "Prisma", "MongoDB"],
       liveUrl: "https://nathakon-todo.site/register",
       githubUrl: "https://github.com/nnimkanSong/To-Do-list.git",
+      isLive: true,
     },
     {
       title: "PROJECT Room Booking System",
@@ -47,6 +51,7 @@ export function ProjectsSection() {
       technologies: ["React", "CSS", "Express", "JavaScript", "MongoDB"],
       liveUrl: "https://www.kmitl-rbs.online/",
       githubUrl: "https://github.com/nnimkanSong/Project_Webapp",
+      isLive: true,
     }
   ];
 
@@ -115,34 +120,30 @@ export function ProjectsSection() {
                   </div>
 
                   <div className="flex gap-2 items-end mt-4" data-aos="fade-up" data-aos-delay="250">
-                    <Link
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1"
-                      aria-label={`Open live demo for ${project.title}`}
-                    >
+                    {project.isLive ? (
+                      <Link
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1"
+                      >
+                        <button
+                          className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-zinc-800"
+                          type="button"
+                        >
+                          Live Demo
+                        </button>
+                      </Link>
+                    ) : (
                       <button
-                        className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white outline-none ring-zinc-400 transition hover:bg-zinc-800 focus-visible:ring-2 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
+                        disabled
+                        className="inline-flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-md bg-zinc-300 px-4 py-2 text-sm font-medium text-zinc-500 dark:bg-zinc-700 dark:text-zinc-400"
                         type="button"
                       >
-                        <svg
-                          viewBox="0 0 24 24"
-                          className="h-4 w-4"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          aria-hidden="true"
-                        >
-                          <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                          <path d="M15 3h6v6" />
-                          <path d="M10 14 21 3" />
-                        </svg>
-                        Live Demo
+                        Demo Unavailable
                       </button>
-                    </Link>
+                    )}
+
 
                     <Link
                       href={project.githubUrl}
