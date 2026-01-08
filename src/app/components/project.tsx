@@ -128,7 +128,7 @@ export function ProjectsSection() {
                         className="flex-1"
                       >
                         <button
-                          className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-zinc-800"
+                          className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white outline-none ring-zinc-400 transition hover:bg-zinc-800 focus-visible:ring-2 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
                           type="button"
                         >
                           Live Demo
