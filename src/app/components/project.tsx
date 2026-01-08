@@ -38,6 +38,15 @@ export function ProjectsSection() {
       technologies: ["NextJS", "Tailwind CSS", "TypeScript", "Prisma", "MongoDB"],
       liveUrl: "https://nathakon-todo.site/register",
       githubUrl: "https://github.com/nnimkanSong/To-Do-list.git",
+    },
+    {
+      title: "PROJECT Room Booking System",
+      description:
+        "Developed a web projetct using MERN Stack. Created as part of the Software Development Process course course (3rd year).",
+      image: "../img/RBS-kmitl.png",
+      technologies: ["React", "CSS", "Express", "JavaScript", "MongoDB"],
+      liveUrl: "https://www.kmitl-rbs.online/",
+      githubUrl: "https://github.com/nnimkanSong/Project_Webapp",
     }
   ];
 
