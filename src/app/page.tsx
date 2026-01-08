@@ -84,7 +84,7 @@ export default function Home() {
 
           <div className="flex gap-[20px] mt-[50px] max-[500px]:justify-center">
             <a
-              href="/files/นายณฐกร_นิ่มกาญจนา_Resume.pdf"
+              href="/files/66200345_Resume.pdf"
               data-aos="fade-up"
               data-aos-delay={BASE_DELAY + 550}
               className="text-white p-[10px] bg-black rounded-[10px] h-[40px] w-[max-content] hover:bg-white/30 hover:backdrop-blur-lg hover:text-white"
