@@ -35,9 +35,6 @@ const techCategories = [
     technologies: [
       { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
       { name: "Express", icon: SiExpress, color: "#ffff" },
-      { name: "FastAPI", icon: SiFastapi, color: "#009688" },
-      { name: "Django", icon: SiDjango, color: "#092E20" },
-      { name: "GraphQL", icon: SiGraphql, color: "#E10098" },
     ],
   },
   {
@@ -46,7 +43,6 @@ const techCategories = [
       { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
       { name: "MySQL", icon: SiMysql, color: "#4479A1" },
       { name: "PostgreSQL", icon: SiPostgresql, color: "#336791" },
-      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
     ],
   },
   {
